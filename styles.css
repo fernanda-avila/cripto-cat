@@ -172,7 +172,20 @@ aside button {
     height: 234px;
     margin: 154px 2px 15px 8px;
     left: 1032px;
+    animation: flutuar 2s ease-in-out infinite;
 }
+
+@keyframes flutuar {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 
 .output-text {
     text-align: justify;
@@ -325,7 +338,7 @@ aside button {
 
     #fig {
         visibility: hidden;
-        margin-bottom: -25px;
+        margin-bottom: -175px;
     }
 
     .output-text {
