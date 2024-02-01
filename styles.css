@@ -1,6 +1,5 @@
-header {
-    padding: 50px;
-}
+
+
 
 body {
     background-color: #131114;
@@ -182,14 +181,15 @@ aside button {
 }
 
 @media (max-width: 900px) {
-    header {
-        padding: 20px;
+    /* header {
+        padding: 20px; */
     }
 
     body {
         background-color: #131114;
         font-family: monospace;
-        margin: 0
+        margin: 0;
+        padding: 0;
     }
 
     .logo-img {
@@ -253,8 +253,10 @@ aside button {
         justify-content: center;
         align-items: center;
         margin-top: 10px;
-        margin-right: 0;
+        margin-right: 20px;
         margin-bottom: 30px;
+        margin-left: 120px;
+        width: 80%;
     }
 
     #btn-cript,
@@ -265,7 +267,7 @@ aside button {
         font-weight: 600;
         font-family: monospace;
         margin-bottom: 10px;
-        margin-right: -10px;
+        margin-right: auto
     }
 
     aside {
@@ -325,7 +327,6 @@ aside button {
         text-align: justify;
         word-break: break-all;
     }
-}
 
 @media (max-width: 800px) {
     #btn-copy {
