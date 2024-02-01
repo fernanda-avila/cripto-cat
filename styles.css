@@ -1,6 +1,5 @@
-
 * {
-    padding:0
+    padding: 0
 }
 
 body {
@@ -114,7 +113,7 @@ body {
     border-radius: 24px;
     box-shadow: 0px 4px 1px rgba(1, 1, 1, 0.25);
     transition: transform 0.1s ease-in-out;
-    position: absolute; 
+    position: absolute;
     left: 12%;
     transform: translateX(-2%);
     margin: auto;
@@ -141,7 +140,7 @@ aside {
     top: 25px;
     right: 0px;
     left: 1350px;
-    padding: 30px;
+    padding-bottom: 30px;
     width: 350px;
     box-shadow: 0px 4px 4px rgba(1, 1, 1, 0.25);
 }
@@ -178,7 +177,7 @@ aside button {
     word-break: break-all;
 }
 
-.hidden-output{
+.hidden-output {
     visibility: hidden;
 }
 
@@ -252,9 +251,10 @@ aside button {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 5% 10% 5%  20%;
-           gap:10px;
-        
+        margin:auto;
+        margin-bottom: 2%;
+        gap: 10px;
+
     }
 
     #btn-cript,
@@ -264,16 +264,16 @@ aside button {
         font-size: 18px;
         font-weight: 600;
         font-family: monospace;
-         
-        
+
+
     }
 
     #btn-cript {
-        margin-left: 3.5%;
+        margin-left: 3%;
     }
 
     aside {
-       
+
         background-color: #FEFAE3;
         border-radius: 2px;
         position: static;
@@ -284,7 +284,7 @@ aside button {
         width: 100%;
         height: 50%;
         box-shadow: 0px 4px 4px rgba(1, 1, 1, 0.25);
-     
+
     }
 
     aside h1 {
@@ -315,9 +315,9 @@ aside button {
         font-size: 18px;
         font-weight: 600;
         font-family: monospace;
-        margin: -70px auto auto 22px; 
-        
-        
+        margin: -70px auto auto auto;
+
+
     }
 
     #fig {
@@ -333,7 +333,7 @@ aside button {
 
 @media (max-width: 800px) {
     #btn-copy {
-     
+
         margin-bottom: -700px;
     }
 
