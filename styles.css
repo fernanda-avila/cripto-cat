@@ -3,10 +3,8 @@ header {
 }
 
 body {
-
     background-color: #131114;
     font-family: monospace;
-    
 }
 
 .logo-img {
@@ -14,9 +12,6 @@ body {
     width: 160px;
     margin-left: 0;
 }
-
-
-
 
 .input-text textarea {
     width: 880px;
@@ -33,19 +28,16 @@ body {
     font-family: monospace;
     font-weight: bold;
     color: #FEFAE3;
-   
 }
 
 .input-text {
     text-align: center;
     margin-right: 70px;
-    
 }
 
 #text-input {
     text-align: center;
     line-break: normal;
-    
 }
 
 ::placeholder {
@@ -62,13 +54,12 @@ body {
     font-size: 12px;
     font-weight: 400;
     margin-left: -400px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .text-warning img {
     width: 14px;
     margin: -3px 8px;
-   
 }
 
 .botoes {
@@ -76,7 +67,7 @@ body {
     justify-content: center;
     margin-top: 15px;
     margin-right: 400px;
-    margin-bottom:60px;
+    margin-bottom: 60px;
 }
 
 #btn-cript {
@@ -90,7 +81,7 @@ body {
     border-radius: 24px;
     margin-right: 16px;
     box-shadow: 0px 4px 1px rgba(1, 1, 1, 0.25);
-    transition: transform 0.1s ease-in-out; 
+    transition: transform 0.1s ease-in-out;
     font-family: monospace;
 }
 
@@ -107,7 +98,6 @@ body {
     box-shadow: 0px 4px 1px rgba(1, 1, 1, 0.25);
     transition: transform 0.1s ease-in-out;
     font-family: monospace;
-   
 }
 
 #btn-copy {
@@ -123,12 +113,10 @@ body {
     border-radius: 24px;
     box-shadow: 0px 4px 1px rgba(1, 1, 1, 0.25);
     transition: transform 0.1s ease-in-out;
-    position: fixed;
-    bottom: 89px;
-     left: 76.5%;
-
-    
-
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #btn-cript:hover {
@@ -159,11 +147,8 @@ aside {
 aside h1 {
     color: #001b30;
     font-weight: 700;
-   
     text-align: center;
     font-size: 29px;
-    
-    
 }
 
 aside p {
@@ -171,87 +156,165 @@ aside p {
     font-weight: 400;
     text-align: center;
     font-size: 18px;
-    
 }
 
-aside button{
+aside button {
     margin-left: 12px;
     margin-top: 10px;
     background-color: #c5d9de;
 }
 
-
-
 #fig {
     width: 246px;
     height: 234px;
-    margin: 154px 2px  15px 8px;
+    margin: 154px 2px 15px 8px;
     left: 1032px;
 }
 
-.output-text{
+.output-text {
     text-align: justify;
     word-break: break-all;
 }
 
+.hidden-output{
+    visibility: hidden;
+}
+
 @media (max-width: 950px) {
-    body{
+    header {
+        padding: 20px;
+    }
+
+    body {
+        background-color: #131114;
+        font-family: monospace;
+    }
+
+    .logo-img {
+        height: 125px;
+        width: 125px;
+        margin-left: 0;
+    }
+
+    .input-text textarea {
         width: 100%;
+        height: 195px;
+        overflow: hidden;
+        margin-top: 45px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        caret-color: #FEFAE3;
+        font-size: 20px;
+        font-family: monospace;
+        font-weight: bold;
+        color: #FEFAE3;
+    }
+
+    .input-text {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #text-input {
+        text-align: center;
+        line-break: normal;
+    }
+
+    ::placeholder {
+        color: #FEFAE3;
+        font-weight: 400;
+        font-size: 24px;
+        height: 300px;
+    }
+
+    .text-warning {
+        margin-top: 10px;
+        text-align: center;
+        color: #fcfee8;
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .text-warning img {
+        width: 10px;
+        margin: -2px 5px;
+    }
+
+    .botoes {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #btn-cript,
+    #btn-descript {
+        width: 80%;
+        height: 70px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: monospace;
+        margin-bottom: 10px;
+        margin-right: -10px;
     }
 
     aside {
+        background-color: #FEFAE3;
+        border-radius: 2px;
         position: static;
-        width: 100vw;
+        top: auto;
+        right: auto;
+        flex-direction: column;
+        left: auto;
+        padding: 20px;
+        width: 100%;
+        box-shadow: 0px 4px 4px rgba(1, 1, 1, 0.25);
+    }
+
+    aside h1 {
+        color: #001b30;
+        font-weight: 700;
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+        margin-top: -280px;
 
     }
 
+    aside p {
+        color: #495057;
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 200px;
+        width: 100%;
+        word-break: break-all;
+    }
+
     #btn-copy {
-        position: static; 
-        margin-left: 5%;
-}
-#fig {
-    display: none;
-}
-aside {
-    background-color: #131114;
-    margin-left: 40%;
-    
-}
+        width: 80%;
+        height: 70px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: monospace;
+        margin-bottom: -160px;
+    }
 
-aside p {
-    color: #FEFAE3;
-    font-size: 20px;
-}
+    #fig {
+        visibility: hidden;
+        margin-bottom: -25px;
+    }
 
-aside h1 {
-    color: #87F96E;
-    font-size: 36px;
-}
-
-.logo-img {
-    height:300px;
-    width: 300px;
-    margin-left: 65%
-}
-
-.input-text textarea {
-    margin-top:40px;
-    margin-left: -70px;
-    font-size: 80px;
-}
-
-.botoes {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left:55%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap:10px;
-}
-.text-warning {
-    margin-left: 20%;
-}
+    .output-text {
+        text-align: justify;
+        word-break: break-all;
+    }
 }
